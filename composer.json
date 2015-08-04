@@ -1,0 +1,30 @@
+{
+    "name": "spin/template",
+    "type": "library",
+    "description": "An Active Record like pattern for template rendering with PHP - supporting Twig, Smarty, Plates and Dwoo",
+    "keywords": ["template", "activerecord", "view", "twig", "plates", "smarty", "dwoo"],
+    "homepage": "https://github.com/fire015/spin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason M",
+            "email": "emailfire@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spin\\Template\\": "src/"
+        }
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "~4.0",
+        "twig/twig": "~1.0",
+        "league/plates": "~3.1",
+        "smarty/smarty": "~3.1",
+		"dwoo/dwoo": "2.0b1"
+    }
+}

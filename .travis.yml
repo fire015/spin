@@ -8,12 +8,12 @@ php:
   - hhvm
   
 env:
-  - FLAGS=
+  - FLAGS=""
 
 matrix:
-    exclude:
+    include:
         - php: 7.0
-        - env: FLAGS=--exclude-group dwoo
+          env: FLAGS="--exclude-group dwoo"
     allow_failures:
         - php: 7.0
         - php: hhvm

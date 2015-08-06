@@ -2,7 +2,7 @@
 
 namespace Spin\Template\Engine;
 
-class DefaultEngine implements Engine
+class DefaultEngine implements EngineInterface
 {
     /**
      * Render the template.

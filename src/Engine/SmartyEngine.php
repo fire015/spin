@@ -4,7 +4,7 @@ namespace Spin\Template\Engine;
 
 use Smarty;
 
-class SmartyEngine implements Engine
+class SmartyEngine implements EngineInterface
 {
     /**
      * The template engine.

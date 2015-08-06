@@ -4,6 +4,7 @@ namespace Spin\Template;
 
 use ArrayAccess;
 use Illuminate\Support\Str;
+use Spin\Template\Engine\EngineInterface;
 
 abstract class Template implements ArrayAccess
 {
@@ -17,7 +18,7 @@ abstract class Template implements ArrayAccess
     /**
      * The template engine.
      *
-     * @var mixed
+     * @var EngineInterface
      */
     protected $engine;
 
@@ -60,9 +61,9 @@ abstract class Template implements ArrayAccess
     /**
      * Set the template engine.
      *
-     * @param Engine $engine
+     * @param EngineInterface $engine
      */
-    public function setEngine(Engine\Engine $engine)
+    public function setEngine(EngineInterface $engine)
     {
         $this->engine = $engine;
     }

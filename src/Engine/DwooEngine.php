@@ -4,7 +4,7 @@ namespace Spin\Template\Engine;
 
 use Dwoo\Core;
 
-class DwooEngine implements Engine
+class DwooEngine implements EngineInterface
 {
     /**
      * The template engine.

@@ -4,7 +4,7 @@ namespace Spin\Template\Engine;
 
 use League\Plates\Engine as LeaguePlatesEngine;
 
-class PlatesEngine implements Engine
+class PlatesEngine implements EngineInterface
 {
     /**
      * The template engine.

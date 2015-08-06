@@ -2,7 +2,7 @@
 
 namespace Spin\Template\Engine;
 
-interface Engine
+interface EngineInterface
 {
     /**
      * Render the template.

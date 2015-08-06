@@ -4,7 +4,7 @@ namespace Spin\Template\Engine;
 
 use Twig_Environment;
 
-class TwigEngine implements Engine
+class TwigEngine implements EngineInterface
 {
     /**
      * The template engine.

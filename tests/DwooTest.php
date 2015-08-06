@@ -5,6 +5,9 @@ use Spin\Template\Engine\DwooEngine;
 
 class DwooTest extends PHPUnit_Framework_TestCase
 {
+    /**
+     * @group dwoo
+     */
     public function testEngine()
     {
         if (!class_exists('Dwoo\Core')) {

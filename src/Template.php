@@ -59,6 +59,20 @@ abstract class Template implements ArrayAccess
     }
 
     /**
+     * Get the template engine.
+     *
+     * @return EngineInterface
+     */
+    public function getEngine()
+    {
+        if (is_null($this->engine)) {
+            $this->engine = new Engine\DefaultEngine();
+        }
+
+        return $this->engine;
+    }
+
+    /**
      * Set the template engine.
      *
      * @param EngineInterface $engine
@@ -75,13 +89,7 @@ abstract class Template implements ArrayAccess
      */
     public function render()
     {
-        if (is_null($this->engine)) {
-            $engine = new Engine\DefaultEngine();
-        } else {
-            $engine = $this->engine;
-        }
-
-        return $engine->render($this->file, $this->toArray());
+        return $this->getEngine()->render($this->file, $this->toArray());
     }
 
     /**

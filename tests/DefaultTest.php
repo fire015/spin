@@ -10,6 +10,7 @@ class DefaultTest extends PHPUnit_Framework_TestCase
         $template->name = 'john';
 
         $this->assertEquals('hello john', $template->render());
+        $this->assertInstanceOf('Spin\Template\Engine\DefaultEngine', $template->getEngine());
     }
 
     /**
